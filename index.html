@@ -8,13 +8,11 @@
 </head>
 <body>
   <div class="container">
-    <button id="shortenBtn" onclick="showForm()">Shorten URL</button>
-    <div id="formContainer" class="hidden">
-      <form id="urlForm" onsubmit="shortenUrl(event)">
-        <input type="text" id="longUrlInput" placeholder="Enter long URL...">
-        <button type="submit">Complete</button>
-      </form>
-    </div>
+    <h1>URL Shortener</h1>
+    <form id="urlForm" onsubmit="shortenUrl(event)">
+      <input type="url" id="longUrlInput" placeholder="Enter long URL..." required>
+      <button type="submit">Shorten URL</button>
+    </form>
     <div id="shortUrlContainer" class="hidden">
       <p id="shortUrl"></p>
     </div>
