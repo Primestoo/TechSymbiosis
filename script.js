@@ -1,16 +1,7 @@
-function showForm() {
-  document.getElementById('formContainer').classList.remove('hidden');
-}
-
 async function shortenUrl(event) {
   event.preventDefault();
 
   const longUrl = document.getElementById('longUrlInput').value;
-
-  if (!longUrl) {
-    alert("Please enter a valid URL.");
-    return;
-  }
 
   try {
     const response = await fetch('/api/shorten', {
