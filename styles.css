@@ -1,21 +1,31 @@
-/* Styles for form and button */
-#formContainer {
-  margin-top: 20px;
-}
-
-#urlForm {
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
   display: flex;
-  flex-direction: column;
+  justify-content: center;
   align-items: center;
+  height: 100vh;
 }
 
-#longUrlInput {
-  margin-bottom: 10px;
-  padding: 8px;
+.container {
+  text-align: center;
+}
+
+h1 {
+  margin-bottom: 20px;
+}
+
+form {
+  margin-bottom: 20px;
+}
+
+input[type="url"] {
   width: 300px;
+  padding: 8px;
 }
 
-#shortenBtn, button {
+button {
   background-color: #4CAF50;
   color: white;
   padding: 10px 20px;
@@ -26,11 +36,10 @@
   transition: background-color 0.3s;
 }
 
-#shortenBtn:hover, button:hover {
+button:hover {
   background-color: #45a049;
 }
 
-/* Styles for hiding and showing elements */
 .hidden {
   display: none;
 }
